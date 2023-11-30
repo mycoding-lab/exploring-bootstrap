@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Single column header content footer</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header, footer {
+            height: 100px;
+            background-color: #f0f0f0;
+            text-align: center;
+            line-height: 100px;
+        }
+
+        main {
+            flex: 1;
+            overflow: auto;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>demo Header</h1>
+    </header>
+
+    <main>
+        
+        <h2>Main Content Goes Here</h2>
+        <p>This is where your main content will be placed, and it will fill the available screen height and width.</p>
+        <!-- Add your content here -->
+    </main>
+
+    <footer>
+        <p>demo Footer</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

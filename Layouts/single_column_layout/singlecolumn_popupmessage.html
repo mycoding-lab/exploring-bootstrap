@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Single column with popup message</title>
+    <style>
+        body {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            margin: 0;
+        }
+
+        header, footer {
+            width: 100%;
+            height: 100px;
+            background-color: #f0f0f0;
+            text-align: center;
+            line-height: 100px;
+        }
+
+        main {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #welcomePopup {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>demo header</h1>
+    </header>
+
+    <main>
+        <button class="btn btn-primary" onclick="showWelcomePopup()">Welcome</button>
+    </main>
+
+    <footer>
+        <p>demo Footer</p>
+    </footer>
+
+    <div id="welcomePopup">
+        <p>Welcome to our website!</p>
+        <button class="btn btn-secondary" onclick="hideWelcomePopup()">Close</button>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function showWelcomePopup() {
+            document.getElementById('welcomePopup').style.display = 'block';
+        }
+
+        function hideWelcomePopup() {
+            document.getElementById('welcomePopup').style.display = 'none';
+        }
+    </script>
+</body>
+</html>
