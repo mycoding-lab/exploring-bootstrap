@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap Dashboard left side navbar demo</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            margin: 0;
+        }
+
+        header,
+        footer {
+            background-color: #f8f9fa;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .wrapper {
+            display: flex;
+            flex: 1;
+        }
+
+        .sidebar {
+            background-color: #f8f9fa;
+            color: blue;
+            width: 250px;
+        }
+
+        .main-content {
+            flex: 1;
+            padding: 20px;
+        }
+
+        p {
+            text-align: justify;
+        }
+
+        @media (max-width: 768px) {
+            .wrapper {
+                flex-direction: column;
+            }
+
+            .sidebar {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Dashboard Header</h1>
+    </header>
+
+    <div class="wrapper">
+        <nav class="sidebar">
+            <ul class="nav flex-column">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">
+                        Dashboard
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="#">
+                        Dashboard
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="#">
+                        Dashboard
+                    </a>
+                </li>
+
+                <!-- Add more sidebar items as needed -->
+            </ul>
+        </nav>
+
+        <div class="main-content">
+            <h2>Main Content</h2>
+            <!-- Add your main content here -->
+            <p>Ea do labore reprehenderit pariatur minim id commodo non deserunt. Consequat consequat aute minim fugiat
+                do Lorem et. Occaecat esse ipsum voluptate incididunt aliqua sunt id Lorem ipsum dolore sunt ipsum ad
+                laboris. Fugiat duis qui non sunt sunt elit ullamco esse irure eiusmod ullamco labore Lorem qui.
+
+                Eu reprehenderit dolore labore id ipsum ex ut ad in mollit cillum. Adipisicing non deserunt voluptate
+                reprehenderit nulla ut elit proident laboris cupidatat est. Consectetur consequat velit sunt mollit
+                pariatur laboris veniam irure ut.
+
+                Sint duis laborum in in tempor ipsum ea. Magna consequat ex veniam sit sit adipisicing amet sit nisi.
+                Cupidatat laboris reprehenderit fugiat aliqua exercitation ipsum reprehenderit. Est labore tempor
+                officia aliquip fugiat ullamco ipsum aute dolor elit incididunt. Fugiat culpa ut excepteur id aliquip
+                nostrud consequat nostrud sit in. Ullamco quis ut deserunt eiusmod cillum do fugiat aliquip labore
+                laborum aute cillum ad ipsum.</p>
+            <br>
+            <p>
+            <p>Ea do labore reprehenderit pariatur minim id commodo non deserunt. Consequat consequat aute minim fugiat
+                do Lorem et. Occaecat esse ipsum voluptate incididunt aliqua sunt id Lorem ipsum dolore sunt ipsum ad
+                laboris. Fugiat duis qui non sunt sunt elit ullamco esse irure eiusmod ullamco labore Lorem qui.
+
+                Eu reprehenderit dolore labore id ipsum ex ut ad in mollit cillum. Adipisicing non deserunt voluptate
+                reprehenderit nulla ut elit proident laboris cupidatat est. Consectetur consequat velit sunt mollit
+                pariatur laboris veniam irure ut.
+
+                Sint duis laborum in in tempor ipsum ea. Magna consequat ex veniam sit sit adipisicing amet sit nisi.
+                Cupidatat laboris reprehenderit fugiat aliqua exercitation ipsum reprehenderit. Est labore tempor
+                officia aliquip fugiat ullamco ipsum aute dolor elit incididunt. Fugiat culpa ut excepteur id aliquip
+                nostrud consequat nostrud sit in. Ullamco quis ut deserunt eiusmod cillum do fugiat aliquip labore
+                laborum aute cillum ad ipsum.</p>
+            </p>
+
+        </div>
+    </div>
+
+    <footer>
+        <p>Dashboard Footer</p>
+    </footer>
+
+    <!-- Bootstrap JS and Popper.js (Optional) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
